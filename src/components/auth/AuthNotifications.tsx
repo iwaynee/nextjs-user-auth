@@ -1,4 +1,4 @@
-import { validateRequest } from '@/server/auth/validate-request';
+import { validateRequest } from '@/lib/auth/server/validate-request';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { AlertCircle } from 'lucide-react';
 import Link from 'next/link';

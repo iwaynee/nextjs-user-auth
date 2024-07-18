@@ -3,11 +3,11 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@radix-ui/react-label';
 import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
-import { logOut, verifyEmail } from '@/server/actions/auth';
+import { logOut, verifyEmail } from '@/lib/auth/server/actions';
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import type { z } from 'zod';
-import { codeSchema } from '@/lib/validators/auth';
+import { codeSchema } from '@/lib/auth/validators';
 import { zodResolver } from '@hookform/resolvers/zod';
 import {
     Form,

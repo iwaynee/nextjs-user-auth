@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import { validateRequest } from '@/server/auth/validate-request';
+import { validateRequest } from '@/lib/auth/server/validate-request';
 import { Authenticate } from './authenticate';
 
 export default async function LoginPage() {

@@ -2,7 +2,7 @@
 import { redirect } from 'next/navigation';
 import { env } from '@/env';
 import * as React from 'react';
-import { validateRequest } from '@/server/auth/validate-request';
+import { validateRequest } from '@/lib/auth/server/validate-request';
 import { Dashboard } from '@/app/(main)/dashboard/dashboard';
 import { AuthNotifications } from '@/components/auth/AuthNotifications';
 

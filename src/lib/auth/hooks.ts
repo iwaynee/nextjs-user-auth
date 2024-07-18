@@ -1,3 +1,5 @@
+'use client';
+
 import { useMutation } from '@tanstack/react-query';
 import {
     resetPassword,
@@ -7,7 +9,7 @@ import {
     signIn,
     signUp,
     verifyEmail,
-} from '@/server/actions/auth';
+} from '@/lib/auth/server/actions';
 
 export const useSignUpMutation = () => {
     return useMutation({

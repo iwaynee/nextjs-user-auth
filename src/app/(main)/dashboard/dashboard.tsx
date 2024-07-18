@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { useMutation } from '@tanstack/react-query';
-import { deleteUser, logOut } from '@/server/actions/auth';
+import { deleteUser, logOut } from '@/lib/auth/server/actions';
 import * as React from 'react';
 
 export const Dashboard = () => {

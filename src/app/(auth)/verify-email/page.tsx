@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { redirect } from 'next/navigation';
-import { validateRequest } from '@/server/auth/validate-request';
-import { verifyEmail } from '@/server/actions/auth';
+import { validateRequest } from '@/lib/auth/server/validate-request';
+import { verifyEmail } from '@/lib/auth/server/actions';
 import { Suspense } from 'react';
 import { VerifyCode } from '@/app/(auth)/verify-email/VerifyCode';
 

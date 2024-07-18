@@ -6,12 +6,12 @@ import {
     signInSchema,
     signUpSchema,
     twoFactorSetupSchema,
-} from '@/lib/validators/auth';
+} from '@/lib/auth/validators';
 import { db } from '@/server/db';
 import { generateId, Scrypt, TimeSpan } from 'lucia';
 import { lucia } from '@/lib/auth';
 import { cookies } from 'next/headers';
-import { validateRequest } from '@/server/auth/validate-request';
+import { validateRequest } from '@/lib/auth/server/validate-request';
 import { redirect } from 'next/navigation';
 import {
     emailVerificationCodesTable,

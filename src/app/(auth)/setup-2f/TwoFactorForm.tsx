@@ -1,7 +1,7 @@
 'use client';
 import { useForm } from 'react-hook-form';
 import type { z } from 'zod';
-import { twoFactorSetupSchema } from '@/lib/validators/auth';
+import { twoFactorSetupSchema } from '@/lib/auth/validators';
 import { zodResolver } from '@hookform/resolvers/zod';
 import {
     Form,

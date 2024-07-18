@@ -16,7 +16,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import { toast } from 'sonner';
-import { signUpSchema } from '@/lib/validators/auth';
+import { signUpSchema } from '@/lib/auth/validators';
 import { useSignUpMutation } from '@/lib/auth/hooks';
 
 export const SignUp = () => {

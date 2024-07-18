@@ -18,7 +18,7 @@ import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import { toast } from 'sonner';
 import Link from 'next/link';
-import { signInSchema } from '@/lib/validators/auth';
+import { signInSchema } from '@/lib/auth/validators';
 import { useSignInMutation } from '@/lib/auth/hooks';
 
 export const SignIn = () => {

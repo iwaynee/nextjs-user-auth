@@ -9,7 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { useForm } from 'react-hook-form';
 import { type z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { emailSchema } from '@/lib/validators/auth';
+import { emailSchema } from '@/lib/auth/validators';
 import {
     Form,
     FormControl,

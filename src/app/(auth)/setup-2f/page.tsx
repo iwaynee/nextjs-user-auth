@@ -1,8 +1,8 @@
-import { validateRequest } from '@/server/auth/validate-request';
+import { validateRequest } from '@/lib/auth/server/validate-request';
 import { redirect } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import React, { Suspense } from 'react';
-import { generateTwoFactor } from '@/server/actions/auth';
+import { generateTwoFactor } from '@/lib/auth/server/actions';
 import { QrCanvas } from '@/app/(auth)/setup-2f/QrCanvas';
 import { TwoFactorForm } from '@/app/(auth)/setup-2f/TwoFactorForm';
 

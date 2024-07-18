@@ -1,6 +1,6 @@
 'use server';
 
-import { validateRequest } from '@/server/auth/validate-request';
+import { validateRequest } from '@/lib/auth/server/validate-request';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 

@@ -1,7 +1,7 @@
 import { redirect } from 'next/navigation';
-import { validateRequest } from '@/server/auth/validate-request';
-import { ResetPassword } from '@/app/(auth)/reset-password/reset-password';
-import { NewPassword } from '@/app/(auth)/reset-password/new-password';
+import { validateRequest } from '@/lib/auth/server/validate-request';
+import { NewPassword } from '@/app/(auth)/reset-password/NewPassword';
+import { ResetPassword } from '@/app/(auth)/reset-password/ResetPassword';
 
 export default async function ForgotPasswordPage({
     searchParams,

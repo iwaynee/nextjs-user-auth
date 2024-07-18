@@ -1,6 +1,6 @@
 'use client';
 import type { z } from 'zod';
-import { type emailSchema, newPasswordSchema } from '@/lib/validators/auth';
+import { newPasswordSchema } from '@/lib/auth/validators';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import {
