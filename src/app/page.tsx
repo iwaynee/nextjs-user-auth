@@ -1,6 +1,6 @@
 'use server';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { UserInfo } from '@/components/UserInfo';
+import { UserInfo } from '@/components/auth/UserInfo';
 import { env } from '@/env';
 import { Suspense } from 'react';
 
